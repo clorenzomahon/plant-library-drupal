@@ -28,6 +28,7 @@ module:
   link: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   mysql: 0
   navigation: 0
   node: 0
@@ -35,13 +36,17 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  simple_sitemap: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   update: 0
   user: 0
   views_ui: 0
+  yoast_seo: 0
+  pathauto: 1
   views: 10
   standard: 1000
 theme:

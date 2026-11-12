@@ -1,0 +1,21 @@
+uuid: af224782-38ed-4d9e-80b4-627f216b1d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo
+    - node.type.plant
+  module:
+    - yoast_seo
+id: node.plant.field_seo
+field_name: field_seo
+entity_type: node
+bundle: plant
+label: SEO
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

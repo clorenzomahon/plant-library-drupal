@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.field.node.plant.field_image
     - field.field.node.plant.field_latin_name
+    - field.field.node.plant.field_meta_tags
     - field.field.node.plant.field_plant_type
+    - field.field.node.plant.field_seo
     - field.field.node.plant.field_sowing_months
     - field.field.node.plant.field_sun
     - field.field.node.plant.field_water
@@ -13,7 +15,9 @@ dependencies:
     - node.type.plant
   module:
     - image
+    - metatag
     - path
+    - yoast_seo
 id: node.plant.default
 targetEntityType: node
 bundle: plant
@@ -41,6 +45,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 127
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
   field_plant_type:
     type: entity_reference_autocomplete
     weight: 125
@@ -50,6 +62,16 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_seo:
+    type: yoast_seo_widget
+    weight: 128
+    region: content
+    settings:
+      edit_title: false
+      edit_description: false
+      render_theme: null
+      render_view_mode: default
     third_party_settings: {  }
   field_sowing_months:
     type: options_buttons

@@ -1,0 +1,23 @@
+uuid: 4985a65f-9e2f-4b93-b4d5-3e42a2c8eddc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.plant
+  module:
+    - node
+id: urls
+label: URLs
+type: 'canonical_entities:node'
+pattern: '/plants/[node:title]'
+selection_criteria:
+  64d0b945-275a-4a1b-bde5-d07ebb303c3a:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      plant: plant
+selection_logic: and
+weight: -5
+relationships: {  }
