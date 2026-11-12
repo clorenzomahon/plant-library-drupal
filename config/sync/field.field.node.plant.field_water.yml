@@ -1,0 +1,21 @@
+uuid: 34697c93-7a86-4542-a3d7-3cfb42febed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_water
+    - node.type.plant
+  module:
+    - options
+id: node.plant.field_water
+field_name: field_water
+entity_type: node
+bundle: plant
+label: Water
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

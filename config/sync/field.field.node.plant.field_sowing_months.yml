@@ -1,0 +1,21 @@
+uuid: 4210b21b-ba49-4d20-bb5e-1d16fed68a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sowing_months
+    - node.type.plant
+  module:
+    - options
+id: node.plant.field_sowing_months
+field_name: field_sowing_months
+entity_type: node
+bundle: plant
+label: 'Sowing months'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 359992e2-5ed2-4a06-ba23-6a63df1946f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sun
+    - node.type.plant
+  module:
+    - options
+id: node.plant.field_sun
+field_name: field_sun
+entity_type: node
+bundle: plant
+label: Sun
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,76 @@
+uuid: fad2ccb7-eb07-42ce-af49-cbd7d8c7204b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.plant.field_image
+    - field.field.node.plant.field_latin_name
+    - field.field.node.plant.field_plant_type
+    - field.field.node.plant.field_sowing_months
+    - field.field.node.plant.field_sun
+    - field.field.node.plant.field_water
+    - node.type.plant
+  module:
+    - image
+    - options
+    - user
+id: node.plant.default
+targetEntityType: node
+bundle: plant
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_latin_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_plant_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_sowing_months:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_sun:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_water:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

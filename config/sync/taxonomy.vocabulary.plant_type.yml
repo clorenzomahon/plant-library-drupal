@@ -1,0 +1,9 @@
+uuid: 41bd6b26-7704-4f18-8ff1-b2504d3f3bfc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Plant type'
+vid: plant_type
+description: null
+weight: 0
+new_revision: false
